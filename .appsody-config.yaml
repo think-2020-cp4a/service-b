@@ -1,0 +1,3 @@
+id: "20200410103359.53374100"
+project-name: service-b
+stack: docker.io/kabanerobeta/java-spring-boot2:0.3
