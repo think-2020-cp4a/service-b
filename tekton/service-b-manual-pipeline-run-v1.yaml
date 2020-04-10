@@ -40,7 +40,7 @@ spec:
   serviceAccountName: kabanero-pipeline
   timeout: "1h0m0s"
   pipelineRef:
-    name: java-spring-boot-2-build-deploy-pl
+    name: java-spring-boot2-build-deploy-pl
   resources:
     - name: git-source
       resourceRef:
