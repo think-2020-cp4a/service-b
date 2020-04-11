@@ -59,6 +59,7 @@ metadata:
     stack.appsody.dev/id: java-spring-boot2
     stack.appsody.dev/version: 0.3.28
   name: service-b
+  namespace: cloudlab
 spec:
   applicationImage: think20cp4a/service-b:1.0.0
   createKnativeService: false
