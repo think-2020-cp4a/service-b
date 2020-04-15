@@ -53,17 +53,23 @@ metadata:
     vcs-type: git
     vendor: Kabanero
     version: 0.3.23
+    sidecar.istio.io/inject: "true"
   creationTimestamp: null
   labels:
     image.opencontainers.org/title: service-b
     stack.appsody.dev/id: java-spring-boot2
     stack.appsody.dev/version: 0.3.28
+    app: service-b
+    version: v1
   name: service-b
   namespace: cloudlab
 spec:
   applicationImage: think20cp4a/service-b:1.0.0
   createKnativeService: false
   expose: true
+  envFrom:
+  - configMapRef:
+      name: jaeger-config
   livenessProbe:
     failureThreshold: 12
     httpGet:
